@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Special Person 💙</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+overflow-x:hidden;
+text-align:center;
+color:white;
+background:linear-gradient(-45deg,#0f0c29,#302b63,#24243e,#ff4d88,#ff758c);
+background-size:500% 500%;
+animation:bgmove 14s ease infinite;
+min-height:100vh;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+padding:30px 15px 50px;
+position:relative;
+z-index:2;
+}
+
+h1{
+font-size:68px;
+margin-top:15px;
+text-shadow:0 0 25px #fff,0 0 40px #ff8de1;
+animation:titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow{
+from{transform:scale(1);}
+to{transform:scale(1.04);}
+}
+
+.sub{
+font-size:24px;
+opacity:0.95;
+margin-top:10px;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:28px;
+line-height:1.8;
+max-width:1150px;
+margin:25px auto;
+padding:28px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.18);
+border-radius:28px;
+box-shadow:0 12px 28px rgba(0,0,0,0.35);
+animation:fadeup 2s ease;
+}
+
+@keyframes fadeup{
+from{opacity:0; transform:translateY(35px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+.slider{
+width:94%;
+max-width:1200px;
+height:700px;
+margin:28px auto;
+overflow:hidden;
+border-radius:35px;
+box-shadow:0 20px 45px rgba(0,0,0,0.55);
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.15);
+display:flex;
+align-items:center;
+}
+
+.slides{
+display:flex;
+width:500%;
+height:100%;
+animation:slide 25s infinite;
+}
+
+.slides img{
+width:100%;
+height:100%;
+object-fit:contain;
+object-position:center center;
+padding:14px;
+border-radius:28px;
+filter:brightness(1.05) contrast(1.06) saturate(1.08);
+animation:zoomPhoto 7s infinite alternate;
+background:rgba(255,255,255,0.04);
+}
+
+@keyframes slide{
+0%,18%{margin-left:0;}
+20%,38%{margin-left:-100%;}
+40%,58%{margin-left:-200%;}
+60%,78%{margin-left:-300%;}
+80%,100%{margin-left:-400%;}
+}
+
+@keyframes zoomPhoto{
+0%{transform:scale(1);}
+100%{transform:scale(1.05);}
+}
+
+button{
+margin-top:30px;
+padding:18px 38px;
+font-size:22px;
+font-weight:700;
+border:none;
+border-radius:60px;
+cursor:pointer;
+background:linear-gradient(90deg,#00dbde,#fc00ff);
+color:white;
+box-shadow:0 0 25px rgba(255,255,255,0.35);
+transition:0.35s;
+}
+
+button:hover{
+transform:translateY(-2px) scale(1.06);
+box-shadow:0 0 35px rgba(255,255,255,0.5);
+}
+
+#msg{
+margin-top:28px;
+font-size:34px;
+font-weight:700;
+min-height:72px;
+text-shadow:0 0 12px rgba(255,255,255,0.9);
+padding:0 10px;
+}
+
+.blink{
+color:#ffe600;
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+0%,100%{opacity:1;}
+50%{opacity:0.35;}
+}
+
+footer{
+margin-top:55px;
+padding-bottom:28px;
+font-size:22px;
+opacity:0.95;
+}
+
+.stars span{
+position:fixed;
+top:-10px;
+font-size:18px;
+opacity:0.8;
+animation:starfall linear infinite;
+pointer-events:none;
+}
+
+.stars span:nth-child(1){left:8%; animation-duration:30s;}
+.stars span:nth-child(2){left:22%; animation-duration:30s;}
+.stars span:nth-child(3){left:37%; animation-duration:23s;}
+.stars span:nth-child(4){left:54%; animation-duration:24s;}
+.stars span:nth-child(5){left:71%; animation-duration:25s;}
+.stars span:nth-child(6){left:88%; animation-duration:27s;}
+
+@keyframes starfall{
+0%{transform:translateY(0);}
+100%{transform:translateY(110vh);}
+}
+
+.confetti{
+position:fixed;
+top:-10px;
+width:12px;
+height:12px;
+border-radius:50%;
+animation:fall linear forwards;
+z-index:999;
+pointer-events:none;
+}
+
+@keyframes fall{
+0%{transform:translateY(0) rotate(0deg);}
+100%{transform:translateY(110vh) rotate(720deg);}
+}
+
+@media(max-width:768px){
+h1{font-size:44px;}
+.sub{font-size:18px;}
+.quote{font-size:20px; padding:18px;}
+.slider{height:420px;}
+#msg{font-size:24px;}
+button{font-size:18px; padding:14px 28px;}
+}
+
+@media(max-width:480px){
+.slider{height:320px;}
+.quote{font-size:18px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars">
+<span>✨</span><span>✨</span><span>✨</span><span>✨</span><span>✨</span><span>✨</span>
+</div>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday Daniii💙</h1>
+<div class="sub"></div>
+
+<div class="quote">
+Every memory with you is a treasure 😍😘 <br>
+Birthdays are a beautiful new start 🎊a fresh beginning 🪄 <br>
+and a chance to chase new dreams with new goals 🎯🤩 <br>
+Move forward with confidence, strength and courage 🤗🫠 <br>
+You are my most special person in my lyf 💙 <br>
+May today and every day of your life be magical, joyful, successful 🎉❣️
+</div>
+
+<div class="slider">
+<div class="slides">
+<img src="image/image1.jpeg" alt="">
+<img src="image/image2.jpeg" alt="">
+<img src="image/image3.jpeg" alt="">
+<img src="image/image4.jpeg" alt="">
+<img src="image/image5.jpeg" alt="">
+</div>
+</div>
+
+<button onclick="playMusic()">🎁 Open Your Surprise</button>
+
+<p id="msg"></p>
+
+<audio id="song" preload="auto">
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+<footer>
+This is my small gift for u</footer>
+
+</div>
+
+<script>
+function playMusic(){
+
+const audio=document.getElementById("song");
+audio.play();
+
+document.getElementById("msg").innerHTML=
+'<span class="blink">✨ My Special Person 💙 You are one of the rarest souls💙What I admire most about you is your maturity, your courage, and the way you face life with such grace. No matter what comes your way, you carry yourself with strength and dignity, and that inspires me more than you know🎉</span>';
+
+for(let i=0;i<80;i++){
+let c=document.createElement("div");
+c.className="confetti";
+c.style.left=Math.random()*100+"vw";
+c.style.animationDuration=(Math.random()*3+2)+"s";
+c.style.backgroundColor=
+["#ff0","#0ff","#f0f","#0f0","#fff","#ff4d88","#00dbde"][Math.floor(Math.random()*7)];
+document.body.appendChild(c);
+setTimeout(()=>c.remove(),5000);
+}
+}
+</script>
+
+</body>
+</html>
